@@ -1,0 +1,1105 @@
+/*======================Home Page===================*/
+
+/*==basic==*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+ }
+ a{
+    text-decoration: none;
+ }
+ ul{
+    list-style: none;
+ }
+
+ /*==hero====*/
+ #hero{
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+.logo {
+    color: #000000; 
+    font-weight: 700;
+    font-size: 1.6rem; 
+    font-family: Arial, sans-serif; 
+}
+
+.logo span {
+    color: #b97c00; 
+    padding: 2px 5px; 
+    font-weight: 600;
+    background-color: transparent; 
+    border-radius: 4px; 
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 70px;
+}
+.menu li a{
+    margin: 0px 20px;
+    color: #303030;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+.menu li a:hover{
+    color: #d56701;
+}
+.appointment-btn{
+    height: 45px;
+    padding: 0px 20px;
+    border-radius:4px;
+    background-color: #d56701;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+/*content===*/
+.content{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    margin-top: auto;
+}
+.hero-img{
+    display: flexbox;
+}    
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -20px;
+    margin-top: -30px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; 
+ }
+ .hero-text h1{
+     font-size: 3.2rem;
+     color: #7e4e17;
+     line-height: 3.6rem;
+ }
+ .hero-text p{
+    color: #535353;
+    margin: 15px 0px;
+    max-width: 500px;
+    letter-spacing: 0.3px;
+    line-height: 1.8rem;
+}
+.hero-text p{
+    color: #535353;
+    margin: 15px 0px;
+    max-width: 500px;
+    letter-spacing: 0.3px;
+    line-height: 1.8rem;
+}
+/*--Buttons**/
+.text-btns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -70px;
+}
+.text-btns a{
+    height: 45px;
+    padding: 0px 15px;
+    background-color: #7e4e17;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.text-btns a i{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d59201;
+    margin-right: 8px;
+    color: #ffffff;
+    font-size: 0.5rem;
+    padding-bottom: 1px;
+}
+/*==our-story=======================*/
+#our_story{
+    background-color: #f5f7fb;
+    max-width: 1200px;
+    width: 90%;
+    margin: 80px auto;
+    border: 10px solid #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.our-story-img{
+    position: relative;
+    display: flex;
+}
+.our-story-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: -30px
+}
+.our-stroy-text h2{
+    font-size: 2.8rem;
+    color: #7e4e17;
+    line-height: 3rem;
+}
+.our-stroy-text p{
+    color: #535353;
+    font-size: 0.9rem;
+    margin: 10px 0px;
+    line-height: 1.4rem;
+    letter-spacing: 0.3px;
+}
+.our-stroy-text p a{
+    color: #122853;
+    text-decoration: underline;
+}
+
+/* ----------------Branches and Facilities Section-------------------- */
+
+
+.branches-facilities-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.branches, .facilities {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.branches h3, .facilities h3 {
+    font-size: 1.8rem;
+    color: #1E1E1E;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #f1a20f;
+    padding-bottom: 10px;
+}
+
+.branches-list, .facilities-list {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #4A4A4A;
+}
+
+.branches-list li, .facilities-list li {
+    margin-bottom: 10px;
+}
+
+
+/*==our-services=====================*/
+#our-services{
+    width: 100%;
+    margin: 50px auto 0px auto;
+    background-color: #f5f7fb;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.services-heading-text strong{
+    color: #130f02;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.services-heading-text h2{
+    font-size: 2.2rem;
+    color: #7e4e17;
+    font-weight: 700;
+    max-width: 600px;
+}
+
+.services-box-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.service-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;/*350px*/
+    border: 5px solid #ffffff;
+    padding: 30px;
+}
+.service-box:hover{
+    border: 5px solid #ebe2c7;
+}
+.service-box i{
+    font-size: 2rem;
+    color: #122853;
+    width: 60px;
+    height: 60px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-box strong{
+    color: #000000;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+.service-box p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: #532d12;
+    max-height: 4.2rem; /* 3 lines * 1.4rem line-height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Allows multiple lines */
+}
+.service-box a{
+    height: 45px;
+    background-color: #432700;
+    color: #ffffff;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.s-box1{
+    background-color: #ecf6fd;
+}
+.s-box2{
+    background-color: #edfff3;
+}
+.s-box3{
+    background-color: #fff0ee;
+}
+.s-box4{
+    background-color: #fcffcf;
+}
+.service-btn{
+    color: #535353;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0px 10px;
+}
+.service-btn a{
+    color: #014dd5;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/*==footer================================*/
+footer{
+    width: 100%;
+    background-color:  #fffcfb;
+}
+.footer-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-company-box{
+    max-width: 330px;
+}
+.footer-company-box p{
+    color: #585858;
+    margin: 5px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    line-height: 1.4rem;
+}
+
+.footer-link-box strong{
+    font-size: 1.2rem;
+    color: #b3780a;
+    font-weight: 600;
+}
+.footer-link-box ul{
+    margin-top: 5px;
+}
+.footer-container ul li a{
+    color: #585858;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: flex;
+    transition: all ease 0.3s;
+}
+.footer-container ul li a:hover{
+    color: #533812;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    border-top: 1px solid #e9e9e9;
+    padding: 20px 0px;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.footer-bottom span{
+    color: #252525;
+    font-size: 0.9rem;
+}
+
+/*-------  Service Page*------- iMAGES*/
+.hero-img2 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -90px;
+}
+
+/* Styling for the Register Patient Link */
+.register-patient-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.register-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f16d0f;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.intro-section {
+    background-color: #f5f7fb;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro-section h2 {
+    font-size: 2rem;
+    color: #684d31;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #585858;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-grid {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #f5f7fb;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.service-item:hover{
+    border: 5px solid #ebe2c7;
+}
+/*---nav fixed--*/
+header, nav {
+    position: relative; /* or fixed, if you want it to stick at the top */
+    z-index: 1000; /* Ensure the navigation is on top of other content */
+}
+
+.services-intro, .services-container {
+    position: relative;
+    z-index: 1; /* Keep other sections at a lower z-index */
+}
+
+/**---------------------------------About us page-------------------------**/
+
+.hero-img3 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -90px;
+
+}
+.about-us-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f7fb;
+    margin-bottom: 30px;
+}
+
+.hero-text p{
+    color: #535353;
+    margin: 10px 0px;
+    max-width: 500px;
+    letter-spacing: 0.3px;
+    line-height: 1.8rem;
+}
+
+.branches-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff
+}
+
+.branch {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.branch img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.branch:hover{
+    border: 5px solid #ebe2c7;
+}
+
+.hospital-summary {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f7fb;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #ff7733;
+    color: white;
+}
+
+tfoot td {
+    background-color: #f3f3f3;
+    font-style: italic;
+    padding: 15px;
+}
+
+/*--------- ----------------------Doctors page-----------------------------*/
+
+.hero-img4 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -50px;
+
+}
+/*------------------Doctors---------------------------*/
+.doctors-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.doctors-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 40px;
+}
+
+.doctor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    text-decoration: none; 
+    color: inherit; 
+    transition: transform 0.2s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff7733;
+}
+
+.doctor-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+/*-----Reviews--------------------------*/
+.reviews-section {
+    text-align: center;
+    padding: 40px;
+}
+.reviews-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.review-card h3 {
+    font-size: 20px;
+    color: #ff7733;
+}
+
+.review-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-review {
+    margin-top: 40px;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-review h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff7733;
+}
+
+.add-review label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.add-review input, .add-review select, .add-review textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-review button {
+    background-color: #ff7733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review button:hover {
+    background-color: #e66722;
+}
+
+/*--------------------Pharmacy Page---------------------------------------*/
+
+.hero-img5 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -50px;
+
+}
+
+/*------Form-----------------------------------*/
+.pharmacy-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.pharmacy-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.pharmacy-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pharmacy-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.pharmacy-form input[type="text"],
+.pharmacy-form input[type="email"],
+.pharmacy-form input[type="number"],
+.pharmacy-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.pharmacy-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7733;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pharmacy-form button:hover {
+    background-color: #e0662c;
+}
+
+
+/*-------------------------Consulting page---------------------------------*/
+.hero-img6 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -50px;
+
+}
+
+/* Reservation Section Styles */
+#reservation-section {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+.reservation-container h1 {
+    font-size: 2rem;
+    color: #5a3c0c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reservation-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555555;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #c67d07;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+/*------------------------ Media Queries for Mobile Devices----------------------------- */
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Adjust hero section */
+    #hero {
+        min-height: 400px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .menu li a {
+        margin: 10px 0;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    
+    .hero-img img {
+        margin: 0;
+        max-height: 300px;
+    }
+
+    .text-btns {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-btns a {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust Our Story Section */
+    #our_story {
+        grid-template-columns: 1fr;
+        margin: 20px 0;
+        padding: 20px;
+    }
+    
+    .our-story-img img {
+        margin: 0;
+    }
+
+    /* Adjust Branches and Facilities Section */
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .branches, .facilities {
+        margin-bottom: 20px;
+    }
+
+    /* Services Section */
+    .services-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .services-heading h2 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .services-box-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .service-box a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Doctors Section */
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card {
+        max-width: 100%;
+    }
+
+    /* Reviews Section */
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 768px) {
+    .appointment-btn,
+    .text-btns a,
+    .add-review button,
+    .register-link {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .add-review {
+        width: 90%;
+    }
+        /* Adjust hero image (including map) */
+        .hero-img3 img {
+            width: 100%;
+            height: auto;
+            max-height: 200px; 
+            object-fit: cover; 
+            object-position: center; 
+            margin-right: 0; 
+            margin-top: 0;
+        }
+    
+        /* Adjust About Us section */
+        .about-us-section {
+            text-align: center;
+            padding: 20px; 
+            margin-bottom: 20px;
+        }
+    
+        .hero-text p {
+            color: #535353;
+            margin: 10px auto;
+            max-width: 100%; 
+            letter-spacing: 0.3px;
+            line-height: 1.6rem; 
+            padding: 0 10px; 
+        }
+    
+        /* Adjust Branches section */
+        .branches-section {
+            text-align: center;
+            padding: 20px; 
+            background-color: #ffffff;
+        }
+    
+        .branch {
+            background-color: #fff;
+            margin: 10px auto;
+            padding: 15px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%; 
+        }
+    
+        .branch img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    
+        .branch:hover {
+            border: 5px solid #ebe2c7;
+        }
+    
+        /* Optional: Add some bottom margin to separate sections better */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+}
