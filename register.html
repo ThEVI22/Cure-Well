@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!--hero-section-->
     <section id="hero">
 
@@ -29,60 +30,69 @@
         </ul>
         <a href="Consulting.html" class="appointment-btn">Consulting reservation</a>
             </nav><!--nav-end-->
+    
 
-            <!--image of the page-->
-            <div class="hero-img5">
-                <img alt="" src="images/Pharmacy Image.png">
-            </div>
+            <!--image of the site-->
+            <div class="hero-img7">
+                <img alt="" src="images/register.png">
+            </div>           
+        </div>
 
+        
+        <!-- Patient Registration form-->
 
-            <!-- Pharmacy Section -->
-    <section class="pharmacy-section">
-        <h1>Buy Your Medicine Online</h1>
-        <form class="pharmacy-form">
+        <section class="registration-section">
+    <h1>Patient Registration</h1>
+    <form class="registration-form">
 
-            <!-- Customer-->
-            <label for="name">Full Name:</label>
-            <input type="text" placeholder="Enter your full name" >
+        <!-- Personal Information -->
+        <label for="name">Full Name:</label>
+        <input type="text" placeholder="Enter your full name" >
 
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Enter your email" >
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" >
 
-            <label for="address">Shipping Address:</label>
-            <input type="text" placeholder="Enter your shipping address" >
+        <label for="phone">Phone Number:</label>
+        <input type="tel" placeholder="Enter your phone number" >
 
-            <!-- Medicine-->
-            <label for="medicine">Select Medicine:</label>
-            <select id="medicine" name="medicine" >
-                <option value="">Select Medicine</option>
-                <option value="aspirin">Aspirin</option>
-                <option value="paracetamol">Paracetamol</option>
-                <option value="ibuprofen">Ibuprofen</option>
-                <option value="antibiotics">Antibiotics</option>
-                <option value="vitamins">Vitamins</option>
-            </select>
+        <label for="address">Home Address:</label>
+        <input type="text" placeholder="Enter your home address" >
 
-            
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" >
 
-            <!-- Payment -->
-            <label for="payment">Payment Method:</label>
-            <select id="payment" name="payment" >
-                <option value="">Select Payment Method</option>
-                <option value="credit-card">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="cash-on-delivery">Cash on Delivery</option>
-            </select>
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" >
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
 
-            <!-- Submit Button -->
-                
-                <button type="submit">Order Now</button>
-        </form>
-    </section>
+        <!-- Medical Information -->
+        <label for="medical-history">Medical History:</label>
+        <textarea placeholder="Enter your medical history" ></textarea>
 
+        <label for="current-medication">Current Medication:</label>
+        <input type="text" placeholder="Enter your current medication">
 
+        <!-- Emergency Contact -->
+        <h2>Emergency Contact</h2>
 
+        <label for="emergency-name">Emergency Contact Name:</label>
+        <input type="text" placeholder="Enter emergency contact name" >
 
-    <!---------------Footer----------------------------->
+        <label for="emergency-phone">Emergency Contact Phone:</label>
+        <input type="tel" placeholder="Enter emergency contact phone number">
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+            <!---------------Footer----------------------------->
     <footer>
         <div class="footer-container">
             <!--**comoany-box**-->
@@ -134,6 +144,6 @@
             <span class="copyright">&#169; 2024 Curewell Hospitals PLC. All rights reserved</span>
         </div>
     </footer>
-    <!---------------Footer end----------------------------->
+    <!---------------Footer end----------------------------->    
 </body>
 </html>

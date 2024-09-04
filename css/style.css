@@ -75,6 +75,23 @@
     letter-spacing: 1px;
     font-size: 0.9rem;
 }
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+
 /*content===*/
 .content{
     max-width: 1200px;
@@ -212,12 +229,20 @@
     gap: 20px;
 }
 
-.branches, .facilities {
+.branches {
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
 }
+.facilities {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+
 
 .branches h3, .facilities h3 {
     font-size: 1.8rem;
@@ -228,7 +253,14 @@
     padding-bottom: 10px;
 }
 
-.branches-list, .facilities-list {
+.branches-list {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #4A4A4A;
+}
+
+.facilities-list {
+    list-style-type: disc;
     padding-left: 20px;
     font-size: 1.1rem;
     color: #4A4A4A;
@@ -449,7 +481,7 @@ footer{
 
 .intro-section h2 {
     font-size: 2rem;
-    color: #684d31;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -844,7 +876,7 @@ tfoot td {
 /* Header Styles */
 .reservation-container h1 {
     font-size: 2rem;
-    color: #5a3c0c;
+    color: #121212;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -892,6 +924,77 @@ tfoot td {
     cursor: pointer;
 }
 
+/*-------------------------Registraion Sit------------------------------*/
+.hero-img7 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -50px;
+
+}
+
+/*------Form-----------------------------------*/
+.registration-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.registration-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"],
+.registration-form input[type="date"],
+.registration-form textarea,
+.registration-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7733;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+    background-color: #e0662c;
+}
+
+
 
 
 /*------------------------ Media Queries for Mobile Devices----------------------------- */
@@ -929,7 +1032,9 @@ tfoot td {
     
     .hero-text h1 {
         font-size: 2.2rem;
-        line-height: 2.6rem;
+        line-height: 2.6rem; 
+          
+        
     }
     
     .hero-text p {
@@ -959,6 +1064,7 @@ tfoot td {
         grid-template-columns: 1fr;
         margin: 20px 0;
         padding: 20px;
+        margin-left: 20px;
     }
     
     .our-story-img img {
@@ -1030,7 +1136,7 @@ tfoot td {
         align-items: flex-start;
     }
 }
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     .appointment-btn,
     .text-btns a,
     .add-review button,
@@ -1044,62 +1150,61 @@ tfoot td {
     .add-review {
         width: 90%;
     }
-        /* Adjust hero image (including map) */
-        .hero-img3 img {
-            width: 100%;
-            height: auto;
-            max-height: 200px; 
-            object-fit: cover; 
-            object-position: center; 
-            margin-right: 0; 
-            margin-top: 0;
-        }
+        
+    .hero-img3 img {
+        width: 100%;
+        height: auto;
+        max-height: 200px; 
+        object-fit: cover; 
+        object-position: center; 
+        margin-right: 0; 
+        margin-top: 0;
+    }
     
         /* Adjust About Us section */
-        .about-us-section {
-            text-align: center;
-            padding: 20px; 
-            margin-bottom: 20px;
-        }
+    .about-us-section {
+        text-align: center;
+        padding: 20px; 
+        margin-bottom: 20px;
+    }
     
-        .hero-text p {
-            color: #535353;
-            margin: 10px auto;
-            max-width: 100%; 
-            letter-spacing: 0.3px;
-            line-height: 1.6rem; 
-            padding: 0 10px; 
-        }
+    .hero-text p {
+        color: #535353;
+        margin: 10px auto;
+        max-width: 100%; 
+        letter-spacing: 0.3px;
+        line-height: 1.6rem; 
+        padding: 0 10px; 
+    }
     
-        /* Adjust Branches section */
-        .branches-section {
-            text-align: center;
-            padding: 20px; 
-            background-color: #ffffff;
-        }
+    /* Adjust Branches section */
+    .branches-section {
+        text-align: center;
+        padding: 20px; 
+        background-color: #ffffff;
+    }
     
-        .branch {
-            background-color: #fff;
-            margin: 10px auto;
-            padding: 15px; 
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 90%; 
-        }
+    .branch {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 15px; 
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 90%; 
+    }
     
-        .branch img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
+    .branch img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
     
-        .branch:hover {
-            border: 5px solid #ebe2c7;
-        }
+    .branch:hover {
+        border: 5px solid #ebe2c7;
+    }
     
-        /* Optional: Add some bottom margin to separate sections better */
-        .section {
-            margin-bottom: 30px;
-        }
         
+    .section {
+            margin-bottom: 30px;
+    }
 }
