@@ -340,10 +340,10 @@
     font-size: 0.9rem;
     line-height: 1.4rem;
     color: #532d12;
-    max-height: 4.2rem; /* 3 lines * 1.4rem line-height */
+    max-height: 4.2rem; 
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal; /* Allows multiple lines */
+    white-space: normal; 
 }
 .service-box a{
     height: 45px;
@@ -444,7 +444,7 @@ footer{
     font-size: 0.9rem;
 }
 
-/*-------  Service Page*------- iMAGES*/
+/*--------------------------------Service Page*--------------------------*/
 .hero-img2 img{
     width: 100%;
     height: 100%;
@@ -532,13 +532,13 @@ footer{
 }
 /*---nav fixed--*/
 header, nav {
-    position: relative; /* or fixed, if you want it to stick at the top */
-    z-index: 1000; /* Ensure the navigation is on top of other content */
+    position: relative; 
+    z-index: 1000; 
 }
 
 .services-intro, .services-container {
     position: relative;
-    z-index: 1; /* Keep other sections at a lower z-index */
+    z-index: 1; 
 }
 
 /**---------------------------------About us page-------------------------**/
@@ -792,7 +792,7 @@ tfoot td {
 
 }
 
-/*------Form-----------------------------------*/
+/*-----------Form-----------------------------------*/
 .pharmacy-section {
     text-align: center;
     padding: 40px;
@@ -861,7 +861,7 @@ tfoot td {
 
 }
 
-/* Reservation Section Styles */
+
 #reservation-section {
     width: 100%;
     max-width: 600px;
@@ -873,7 +873,7 @@ tfoot td {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header Styles */
+
 .reservation-container h1 {
     font-size: 2rem;
     color: #121212;
@@ -888,7 +888,7 @@ tfoot td {
     color: #555555;
 }
 
-/* Form Group Styles */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -924,7 +924,7 @@ tfoot td {
     cursor: pointer;
 }
 
-/*-------------------------Registraion Sit------------------------------*/
+/*-------------------------Registraion Page------------------------------*/
 .hero-img7 img{
     width: 100%;
     height: 100%;
@@ -1006,7 +1006,7 @@ tfoot td {
         object-fit: cover;
     }
     
-    /* Adjust hero section */
+    
     #hero {
         min-height: 400px;
     }
@@ -1059,7 +1059,7 @@ tfoot td {
         text-align: center;
     }
 
-    /* Adjust Our Story Section */
+    
     #our_story {
         grid-template-columns: 1fr;
         margin: 20px 0;
@@ -1071,7 +1071,7 @@ tfoot td {
         margin: 0;
     }
 
-    /* Adjust Branches and Facilities Section */
+    
     .flex-container {
         flex-direction: column;
     }
@@ -1080,7 +1080,7 @@ tfoot td {
         margin-bottom: 20px;
     }
 
-    /* Services Section */
+    
     .services-heading {
         flex-direction: column;
         align-items: flex-start;
@@ -1105,7 +1105,7 @@ tfoot td {
         text-align: center;
     }
     
-    /* Doctors Section */
+    
     .doctor-grid {
         grid-template-columns: 1fr;
     }
@@ -1114,7 +1114,7 @@ tfoot td {
         max-width: 100%;
     }
 
-    /* Reviews Section */
+    
     .review-container {
         flex-direction: column;
         align-items: center;
@@ -1125,7 +1125,7 @@ tfoot td {
         margin-bottom: 20px;
     }
 
-    /* Footer */
+    
     .footer-container {
         flex-direction: column;
         align-items: flex-start;
@@ -1161,7 +1161,7 @@ tfoot td {
         margin-top: 0;
     }
     
-        /* Adjust About Us section */
+        
     .about-us-section {
         text-align: center;
         padding: 20px; 
@@ -1177,7 +1177,7 @@ tfoot td {
         padding: 0 10px; 
     }
     
-    /* Adjust Branches section */
+    
     .branches-section {
         text-align: center;
         padding: 20px; 
