@@ -541,7 +541,7 @@ header, nav {
     z-index: 1; 
 }
 
-/**---------------------------------About us page-------------------------**/
+/**---------------------------------About sus page-------------------------**/
 
 .hero-img3 img{
     width: 100%;
@@ -560,7 +560,7 @@ header, nav {
     margin-bottom: 30px;
 }
 
-.hero-text p{
+.hero-text p {
     color: #535353;
     margin: 10px 0px;
     max-width: 500px;
@@ -571,7 +571,7 @@ header, nav {
 .branches-section {
     text-align: center;
     padding: 40px;
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 .branch {
@@ -581,12 +581,30 @@ header, nav {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 70%;
+    max-width: 100%;
 }
 
 .branch img {
     max-width: 100%;
     height: auto;
     margin: 10px 0;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .branch:hover{
@@ -1076,7 +1094,7 @@ tfoot td {
         flex-direction: column;
     }
     
-    .branches, .facilities {
+    .branch, .facilities {
         margin-bottom: 20px;
     }
 
