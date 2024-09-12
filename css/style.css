@@ -541,7 +541,7 @@ header, nav {
     z-index: 1; 
 }
 
-/**---------------------------------About sus page-------------------------**/
+/**---------------------------------About us page-------------------------**/
 
 .hero-img3 img{
     width: 100%;
@@ -842,6 +842,7 @@ tfoot td {
 .pharmacy-form input[type="text"],
 .pharmacy-form input[type="email"],
 .pharmacy-form input[type="number"],
+.pharmacy-form input[type="phone"],
 .pharmacy-form select {
     width: 100%;
     padding: 10px;

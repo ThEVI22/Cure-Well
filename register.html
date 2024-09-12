@@ -6,6 +6,7 @@
     <!--title-->
     <title>My Site</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/final_lolluwa-removebg-preview.png">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,20 +48,20 @@
 
         <!-- Personal Information -->
         <label for="name">Full Name:</label>
-        <input type="text" placeholder="Enter your full name" >
+        <input type="text" placeholder="Enter your full name" required>
 
         <label for="email">Email:</label>
-        <input type="email" placeholder="Enter your email" >
+        <input type="email" placeholder="Enter your email" required>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" placeholder="Enter your phone number" >
+        <input type="tel" placeholder="Enter your phone number" required>
 
         <label for="address">Home Address:</label>
-        <input type="text" placeholder="Enter your home address" >
+        <input type="text" placeholder="Enter your home address" required>
 
         <!-- Date of Birth -->
         <label for="dob">Date of Birth:</label>
-        <input type="date" >
+        <input type="date" required>
 
         <!-- Gender -->
         <label for="gender">Gender:</label>
@@ -82,10 +83,11 @@
         <h2>Emergency Contact</h2>
 
         <label for="emergency-name">Emergency Contact Name:</label>
-        <input type="text" placeholder="Enter emergency contact name" >
+        <input type="text" placeholder="Enter emergency contact name" required>
 
         <label for="emergency-phone">Emergency Contact Phone:</label>
-        <input type="tel" placeholder="Enter emergency contact phone number">
+        <input type="tel" placeholder="Enter emergency contact phone number" pattern="[0-9]{10}" required>
+    
 
         <!-- Submit Button -->
         <button type="submit">Register</button>
