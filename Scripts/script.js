@@ -1,4 +1,4 @@
-// pharmacy.html: Add products to cart and save to localStorage
+// =============pharmacy.html: Add products to cart and save to localStorage==================//
 document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for all Add to Cart buttons
     const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
@@ -9,44 +9,44 @@ document.addEventListener('DOMContentLoaded', function() {
             const price = parseFloat(button.getAttribute('data-price'));
             const quantity = parseInt(button.previousElementSibling.value);
 
-            // Get the current cart from localStorage (if any)
+            
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-            // Check if product already exists in cart
             const existingProductIndex = cart.findIndex(product => product.name === name);
             if (existingProductIndex > -1) {
-                // Update quantity of existing product
+                
                 cart[existingProductIndex].quantity += quantity;
             } else {
-                // Add new product to the cart
+               
                 cart.push({ name, price, quantity });
             }
 
-            // Save updated cart to localStorage
+          
             localStorage.setItem('cart', JSON.stringify(cart));
 
-            // Optionally, show a message or alert
+            
             alert(`${name} has been added to your cart.`);
         });
     });
 });
 
-// cart.html: Display the cart items in a table
+// ===============cart.html: Display the cart items in a table==============//
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Retrieve cart from localStorage
+   
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     
-    // Select the cart table body
+  
     const cartTableBody = document.getElementById('cart-table-body');
     
-    // Clear any existing rows in the cart table
+    
     cartTableBody.innerHTML = '';
 
     // Loop through cart items and add them to the table
     cart.forEach(product => {
         const row = document.createElement('tr');
 
-        // Create table cells for each product property
+        
         const nameCell = document.createElement('td');
         nameCell.textContent = product.name;
         row.appendChild(nameCell);
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         totalCell.textContent = `LKR ${(product.price * product.quantity).toFixed(2)}`;
         row.appendChild(totalCell);
 
-        // Append the row to the table
+        
         cartTableBody.appendChild(row);
     });
 
@@ -72,15 +72,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('cart-total').textContent = `Total: LKR ${totalCost.toFixed(2)}`;
 });
 
-// Optional: Clear Cart function for clearing the cart from localStorage
+
 function clearCart() {
     localStorage.removeItem('cart');
-    window.location.reload(); // Refresh the page to see the empty cart
+    window.location.reload(); 
 }
-// JavaScript Function to Navigate to Checkout Page
+
 function buyNow() {
-    // Redirect to checkout page where user can enter their order details
-    window.location.href = 'checkout.html';  // You can adjust the URL as needed
+    // Redirect to checkout page 
+    window.location.href = 'checkout.html';  
 }
 
 //CREDIT CARD INFO
@@ -100,22 +100,22 @@ function toggleCardForm() {
 //==============================Calculating the Cart total and make it show in the checkout section===================//
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Retrieve the cart from localStorage
+    
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     
-    // Select the container and total elements
+   
     const cartItemsContainer = document.getElementById('cart-items');
     const subtotalElement = document.getElementById('subtotal');
     const shippingElement = document.getElementById('shipping');
     const totalElement = document.getElementById('total');
 
-    // Clear any existing items in the cart items container
+    
     cartItemsContainer.innerHTML = '';
 
     let subtotal = 0;
 
 
-    // Loop through cart items and add them to the cart summary
+   
     cart.forEach(product => {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('cart-item');
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         cartItemsContainer.appendChild(itemDiv);
 
-        // Calculate the subtotal
+        // Calculate total
         subtotal += product.price * product.quantity;
     });
 
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ========================================Process Payment and Display Thank-You Message=========================//
 
 function processPayment(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
 
     // Gather form inputs
     const name = document.getElementById('name').value.trim();
@@ -149,7 +149,7 @@ function processPayment(event) {
     const city = document.getElementById('city').value.trim();
     const paymentMethod = document.querySelector('input[name="payment"]:checked');
 
-    // Input validation
+   
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (name === "") {
         alert("Please enter your full name.");
@@ -172,35 +172,35 @@ function processPayment(event) {
         return;
     }
 
-       // Validate payment method (if Credit/Debit Card selected, validate card details)
+      
        if (paymentMethod && paymentMethod.value === "card") {
         const cardNumber = document.getElementById("card-number").value.trim();
         const expiryDate = document.getElementById("expiry-date").value.trim();
         const cvv = document.getElementById("cvv").value.trim();
 
-        // Validate Card Number (16 digits)
+   
         if (!/^\d{16}$/.test(cardNumber)) {
             alert("Please enter a valid 16-digit card number.");
             return;
         }
 
-        // Validate Expiry Date (MM/YY format)
+      
         if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate)) {
             alert("Please enter a valid expiry date in MM/YY format.");
             return;
         }
 
-        // Validate CVV (3 or 4 digits)
+        
         if (!/^\d{3}$/.test(cvv)) {
             alert("Please enter a valid CVV (3 or 4 digits).");
             return;
         }
     }
     
-    // Get the cart from localStorage
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+   
+    const cart = JSON.parse(localStorage.getItem('cart')) || []; //Local Storage
 
-    // Generate a delivery date (3 days from today)
+   
     const deliveryDate = new Date();
     deliveryDate.setDate(deliveryDate.getDate() + 3);
     const formattedDate = deliveryDate.toLocaleDateString();
@@ -214,7 +214,7 @@ function processPayment(event) {
     `;
     thankYouMessage.classList.add('show'); // Show the message with animation
 
-    // Optionally, clear the cart and form
+   
     localStorage.removeItem('cart');
     document.getElementById('checkout-form').reset();
     document.getElementById('cart-items').innerHTML = '';
@@ -234,7 +234,7 @@ function saveToFavourites() {
         cart: cart,
     };
 
-    // Save to localStorage as "favouriteOrder"
+ 
     localStorage.setItem('favouriteOrder', JSON.stringify(formData));
     alert('Order has been saved as a favourite.');
 }
@@ -244,6 +244,7 @@ function applyFavourites() {
     const favouriteOrder = JSON.parse(localStorage.getItem('favouriteOrder'));
 
     if (favouriteOrder) {
+        
         // Populate form fields
         document.getElementById('name').value = favouriteOrder.name;
         document.getElementById('email').value = favouriteOrder.email;
@@ -279,7 +280,7 @@ function applyFavourites() {
     }
 }
 
-// The thank-you message close function
+// The thank-you message with close function
 function closeMessage() {
     const thankYouMessage = document.getElementById('thank-you-message');
     thankYouMessage.classList.remove('show');
