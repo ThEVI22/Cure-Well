@@ -22,7 +22,7 @@
     justify-content: space-between;
     min-height: 600px;
 }
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +31,7 @@
     margin: 0px auto;
     padding: 30px 0px;
 }
+
 .logo {
     color: #000000; 
     font-weight: 700;
@@ -46,26 +47,29 @@
     border-radius: 4px; 
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: auto;
     margin-left: 70px;
 }
-.menu li a{
+
+.menu li a {
     margin: 0px 20px;
     color: #303030;
     font-weight: 500;
     transition: all ease 0.3s;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: #d56701;
 }
-.appointment-btn{
+
+.appointment-btn {
     height: 45px;
     padding: 0px 20px;
-    border-radius:4px;
+    border-radius: 4px;
     background-color: #d56701;
     color: #ffffff;
     display: flex;
@@ -75,22 +79,27 @@
     letter-spacing: 1px;
     font-size: 0.9rem;
 }
+/*====================Cart Icon=====================*/
 
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
+
+
+.cart-icon img {
+    
+    width: 65px; 
+    height: auto;
+    margin-left: 30px; 
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.hamburger div {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
+.cart-icon img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+    
 }
+
+
+
 
 /*content===*/
 .content{
@@ -145,33 +154,7 @@
     align-items: center;
     margin-top: -70px;
 }
-.text-btns a{
-    height: 45px;
-    padding: 0px 15px;
-    background-color: #7e4e17;
-    color: #ffffff;
-    border-radius: 4px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-}
-.text-btns a i{
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #d59201;
-    margin-right: 8px;
-    color: #ffffff;
-    font-size: 0.5rem;
-    padding-bottom: 1px;
-}
+
 /*==our-story=======================*/
 #our_story{
     background-color: #f5f7fb;
@@ -541,6 +524,12 @@ header, nav {
     z-index: 1; 
 }
 
+.register-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
 /**---------------------------------About us page-------------------------**/
 
 .hero-img3 img{
@@ -629,7 +618,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 12px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -810,62 +799,120 @@ tfoot td {
 
 }
 
-/*-----------Form-----------------------------------*/
-.pharmacy-section {
-    text-align: center;
-    padding: 40px;
-    background-color: #fff;
-}
-
-.pharmacy-section h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.pharmacy-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
+/* Center the main-content section */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f8f9fa;
     padding: 20px;
+}
+
+/* Styling the main-content */
+.main-content {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.pharmacy-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: left;
+/* Category section styling */
+.category-section {
+    margin-bottom: 40px; 
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #ddd; 
 }
 
-.pharmacy-form input[type="text"],
-.pharmacy-form input[type="email"],
-.pharmacy-form input[type="number"],
-.pharmacy-form input[type="phone"],
-.pharmacy-form select {
-    width: 100%;
-    padding: 10px;
+.container .main-content .category-section h2 {
+    font-size: 1.8rem;
+    color: #eba327;  
     margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
 }
 
-.pharmacy-form button {
-    width: 100%;
+/* Product grid layout */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+}
+
+.product-card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 15px;
-    background-color: #ff7733;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card h3 {
+    font-size: 1.1rem; 
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0; 
+    white-space: normal; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    line-height: 1.4; 
+    max-height: 2.8em; 
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px; 
+    margin-bottom: 0;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
     color: #fff;
+    background-color: #ff8400;
     border: none;
-    border-radius: 4px;
-    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.pharmacy-form button:hover {
-    background-color: #e0662c;
+.add-to-cart-btn:hover {
+    background-color: #d28200;
 }
+
+
+
+
 
 
 /*-------------------------Consulting page---------------------------------*/
@@ -880,6 +927,137 @@ tfoot td {
 
 }
 
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fb9510;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li:hover {
+    color: #007bff;
+}
+/*-=======================Medicine==========================*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Category Sections */
+.category-section {
+    margin-bottom: 40px;
+}
+
+.category-section h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Product Cards */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 20px); /* 3 cards per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 15px 0;
+}
+
+/* New Label */
+.new-label {
+    position: absolute;
+    background-color: #ff6347;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 0 0 5px 0;
+    top: 0;
+    left: 0;
+}
+
 
 #reservation-section {
     width: 100%;
@@ -891,8 +1069,21 @@ tfoot td {
     margin: 20px auto;
     font-family: 'Poppins', sans-serif;
 }
+/*===================end======================*/
 
 
+
+/*-------------------------Registraion Page------------------------------*/
+.hero-img7 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -50px;
+
+}
 .reservation-container h1 {
     font-size: 2rem;
     color: #121212;
@@ -941,18 +1132,6 @@ tfoot td {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-}
-
-/*-------------------------Registraion Page------------------------------*/
-.hero-img7 img{
-    width: 100%;
-    height: 100%;
-    max-height: 530px;
-    object-fit: contain;
-    object-position: center bottom;
-    margin-right: -60px;
-    margin-top: -50px;
-
 }
 
 /*------Form-----------------------------------*/
@@ -1014,11 +1193,352 @@ tfoot td {
 }
 
 
+/*===========================Add to cart page=====================================*/
+
+.hero-img8 img{
+    width: 100%;
+    height: 100%;
+    max-height: 530px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-right: -60px;
+    margin-top: -50px;
+
+}
+.cart-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.cart-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Cart Table Styles */
+#cart-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#cart-table thead {
+    background-color: #cb8b43;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#cart-table th, #cart-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#cart-table th {
+    font-size: 18px;
+}
+
+#cart-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#cart-table tbody tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+#cart-table td {
+    font-size: 16px;
+}
+
+#cart-total {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    color: #cc8635;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 
-/*------------------------ Media Queries for Mobile Devices----------------------------- */
+#buttons-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+/* Buttons */
+#clear-cart-btn, #buy-now-btn {
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    background-color: #cb8b43;
+    color: white;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    width: 140px; 
+    
+}
+
+#clear-cart-btn:hover, #buy-now-btn:hover {
+    background-color: #a7742c;
+}
+
+/*=========================Checkout Section==================================*/
+
+
+
+/* Checkout Section */
+.checkout-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+
+
+/* Container Styling */
+.container2 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Form Styling */
+#checkout-form {
+    flex: 1 1 50%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-form label {
+    text-align: left;
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#checkout-form input:focus {
+    border-color: #b49563;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.payment-method label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+    position: relative; 
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-method input[type="radio"]:checked {
+    background-color: #c0794d; 
+}
+.payment-method input[type="radio"] {
+    display: none; /* Hide the radio button completely */
+}
+
+
+.pay-btn {
+    background-color: #c0794d; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 12px 40px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: auto; 
+}
+
+.favourites-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px 0;
+    gap: 15px; /* Space between buttons */
+}
+
+.favourites-buttons .pay-btn {
+    flex: 1; 
+    background-color: #b8681d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pay-btn:hover {
+    background-color: #a9663b; 
+}
+
+/* Cart Summary Styling */
+.cart-summary {
+    flex: 1 1 40%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.total-price p {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-price strong {
+    font-size: 18px;
+    color: #000000;
+}
+
+
+
+/* Card Details Section */
+#card-details {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#card-details h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#card-details input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/*=================Thank you massage ===============================*/
+
+/* Style the thank you message container */
+#thank-you-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d39537; 
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: none; /* Hidden initially */
+    z-index: 9999;
+    width: 80%; /* Make it responsive */
+    max-width: 500px;
+    transition: opacity 0.5s ease; /* Smooth fade-in */
+}
+
+
+#thank-you-message.show {
+    display: block;
+    opacity: 1;
+}
+
+
+#thank-you-message .close-btn {
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    font-size: 22px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+
+
+/*------------------------  Media Queries for Mobile Devices----------------------------- */
 
 @media (max-width: 768px) {
+    
+    
     img {
         max-width: 100%;
         height: auto;
@@ -1110,9 +1630,10 @@ tfoot td {
         line-height: 2.2rem;
     }
 
-    .services-box-container {
+    .services-grid {
         flex-direction: column;
     }
+    
 
     .service-box {
         margin-bottom: 20px;
@@ -1225,5 +1746,21 @@ tfoot td {
         
     .section {
             margin-bottom: 30px;
+    }
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .cart-icon img {
+        width: 50px; /* Reduce the size for mobile */
+    }
+
+    .cart-icon {
+        position: fixed; /* Keep it fixed for better access */
+        top: 25px;
+        right: 10px;
+        z-index: 1000; /* Ensure it appears above other elements */
     }
 }

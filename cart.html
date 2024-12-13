@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--title-->
-    <title>Doctors</title>
+    <title>Pharmacy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/final_lolluwa-removebg-preview.png">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="/Scripts/script.js"></script>
+    
 </head>
 <body>
-
-
     <!--hero-section-->
     <section id="hero">
 
@@ -32,109 +30,44 @@
             <li><a href="pharmacy.html">Pharmacy</a></li>
         </ul>
         <a href="Consulting.html" class="appointment-btn">Consulting reservation</a>
-                <!-- Cart Button ------>
+                    <!-- Cart Button ------>
 
-                <a href="cart.html" class="cart-icon">
-                    <img src="/images/cart.png" alt="Cart" />
-                </a>
+        <a href="cart.html" class="cart-icon">
+            <img src="/images/cart.png" alt="Cart" />
+        </a>
 
             </nav><!--nav-end-->
 
-            <!--image of about us-->
-            <div class="hero-img4">
-                <img alt="klo" src="images/Doctors.png">
-            </div>
 
+                <!--image of the page-->
+                <div class="hero-img8">
+                    <img alt="" src="images/j.png">
+                </div>
 
-
-            <!-- Doctors Section -->
-    <section class="doctors-section">
-        <h1>Meet Our Doctors</h1>
-        <div class="doctor-grid">
-
-            <!-- Doctor 1 -->
-            <a href="doctors.html" class="doctor-card">
-                <img src="images/Doctor1.png">
-                <h3>Dr. Maneesha</h3>
-                <p>Specialist: Cardiology</p>
-            </a>
-
-            <!-- Doctor 2 -->
-            <a href="doctors.html" class="doctor-card">
-                <img src="images/Doctor2.png" >
-                <h3>Dr. Sugath De Silva</h3>
-                <p>Specialist: Neurology</p>
-            </a>
-
-            <!-- Doctor 3 -->
-            <a href="doctors.html" class="doctor-card">
-                <img src="images/Doctor3.png" >
-                <h3>Dr. Kaveesha Nileo</h3>
-                <p>Specialist: Orthopedics</p>
-            </a>
-
-            <!-- Doctor 4 -->
-            <a href="doctors.html" class="doctor-card">
-                <img src="images/Doctor6.png" >
-                <h3>Dr. Kaluaracchi</h3>
-                <p>Specialist: Pediatrics</p>
-            </a>
-
-            <!-- Doctor 5 -->
-            <a href="doctors.html" class="doctor-card">
-                <img src="images/Doctor5.png" >
-                <h3>Dr. Sanuliya Perera</h3>
-                <p>Specialist: Dermatology</p>
-            </a>
-
-        </div>
-    </section>
-
-
-    <!-- Review Section -->
-    <section class="reviews-section">
-        <h1>Client Reviews</h1>
-        <div class="review-container">
-
-            <!-- Review 1 -->
-            <div class="review-card">
-                <h3>Narahenpita Peter</h3>
+                <section class="cart-section">
+                    <h1>Your Cart</h1>
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-table-body">
+                       
+                    </tbody>
+                </table>
                 
-                <p>"CureWell Hospital has the best doctors! Dr. Sugathapala helped me recover quickly after my surgery. Highly recommend."</p>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="review-card">
-                <h3>Kotiyagoda Sunil</h3>
-                
-                <p>"Great care and attention by the staff. I felt at ease throughout my treatment. Could improve waiting times."</p>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="review-card">
-                <h3>Noel Amarasinghe</h3>
-                
-                <p>"Exceptional service! The medical staff at CureWell is top-notch and incredibly supportive."</p>
-            </div>
-
-        </div>
-
-        <!-- Add Review Form (Static Form) -->
-        <div class="add-review">
-            <h2>Add Your Review</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name">
-
-
-                <label for="review">Your Review:</label>
-                <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
-
-                <button type="submit">Submit Review</button>
-            </form>
-        </div>
-    </section>
-
+                <div id="cart-total">
+                    
+                </div>
+                <div id="buttons-container">
+                    <button id="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+                    <button id="buy-now-btn" onclick="buyNow()">Buy Now</button>
+                </div>
+                </section>
 
     <!---------------Footer----------------------------->
     <footer>
@@ -189,7 +122,6 @@
         </div>
     </footer>
     <!---------------Footer end----------------------------->
-
-    
+    <script src="/Scripts/script.js"></script>
 </body>
 </html>

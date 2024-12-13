@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/final_lolluwa-removebg-preview.png">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--hero-section-->
+    <section id="hero">
+
+        <!--nav-->
+        <nav class="navigation">
+    <!--logo of the site-->
+    <a href="index.html" class="logo">Cure<span>Well.</span></a>
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="servicepage.html">Services</a></li>
+            <li><a href="doctors.html">Find a Doctor</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+        </ul>
+        <a href="Consulting.html" class="appointment-btn">Consulting reservation</a>
+                    <!-- Cart Button ------>
+
+        <a href="cart.html" class="cart-icon">
+            <img src="/images/cart.png" alt="Cart" />
+        </a>
+
+            </nav><!--nav-end-->
+
+
+                        <!--image of the page-->
+                        <div class="hero-img5">
+                            <img alt="" src="images/checkout.png">
+                        </div>
+                        
+                        <header>
+                            <h1>Checkout</h1>
+                        </header>
+                    
+                        <!-- Checkout Section -->
+                    <section class="checkout-section">
+                        
+                        <div class="container2">
+                            <!--Checkout Form -->
+                            <form id="checkout-form" onsubmit="processPayment(event)">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+                                <label for="address">Delivery Address:</label>
+                                <input type="text" id="address" name="address" placeholder="Delivery Address" required>
+
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="city" placeholder="City" required>
+
+                                <h2>Payment Method</h2>
+                                <div class="payment-method">
+                                    <label>
+                                        <input type="radio" name="payment" value="card" onchange="toggleCardForm()" required>
+                                        <span class="payment-option">Credit/Debit Card</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment" value="cash" onchange="toggleCardForm()" required>
+                                        <span class="payment-option">Cash on Delivery</span>
+                                    </label>
+                                </div>
+                                
+
+                                <!-- Credit Card Details (Hidden Initially) -->
+                                <div id="card-details" class="hidden">
+                                    <h3>Card Details</h3>
+                                    <label for="card-number">Card Number:</label>
+                                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+
+                                    <label for="expiry-date">Expiry Date:</label>
+                                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                                    <label for="cvv">CVV:</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                                </div>
+
+                                <button type="button" class="pay-btn" onclick="processPayment(event)">Pay</button>
+
+                            </form>
+                            
+                            <!--Thank you message-->
+                            <div id="thank-you-message">
+                                
+                                <button class="close-btn" onclick="closeMessage()">x</button>
+                                
+                            </div>
+
+
+                            <!-- Cart Summary -->
+                            <div class="cart-summary">
+                                <h2>Order Summary</h2>
+                                <div id="cart-items">
+                                 
+                                </div>
+                                <hr>
+                                <div class="total-price">
+                                    <p>Total: <span id="subtotal">Rs 0.00</span></p>
+                                    
+                                </div>
+                                <div class="favourites-buttons">
+                                    <button type="button" id="save-fav-btn" class="pay-btn" onclick="saveToFavourites()">Add to Favourites</button>
+                                    <button type="button" id="apply-fav-btn" class="pay-btn" onclick="applyFavourites()">Apply Favourites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </section>
+                    
+                <script src="/Scripts/script.js"></script>
+    <!---------------Footer----------------------------->
+    <footer>
+        <div class="footer-container">
+            <!--**comoany-box**-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo">Cure<span>Well.</span></a>
+                <!--details-->
+                <p>Cure Well is a private hospital committed to delivering exceptional healthcare across a range of specialties for more than 39 years.</p>
+                
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Quick Links</strong>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="servicepage.html">Services</a></li>
+                    
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Links</strong>
+                <ul>
+                    
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Contact US</strong>
+                <ul>
+                    <li>Phone numbers :</li>
+                    <ol>+94 11 2140 000</ol>
+                    <ol>+94 11 2140 040</ol>
+                    <li>E-Mail :</li>
+                    <ol>contactus@curewell.com</ol>
+                </ul>
+            </div>
+            
+   
+        </div>
+
+        <!--**bottom**********************-->
+        <div class="footer-bottom">
+            <span class="copyright">&#169; 2024 Curewell Hospitals PLC. All rights reserved</span>
+        </div>
+    </footer>
+    <!---------------Footer end----------------------------->
+</body>
+</html>               
